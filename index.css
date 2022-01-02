@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+
+
+}
+h2{
+    justify-content: center;
+    text-align: center;
+    background-color: aqua;
+}
+.container{
+    width: 100%;
+    min-width: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 8%;
+
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px ,1fr));
+    grid-gap: 30px;
+
+}
+.gallery img{
+    width:100%;
+    cursor: pointer;
+}
+#FullImageView{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.9);
+    text-align: center;
+}
+#FullImage{
+    padding: 24px;
+    max-width: 98%;
+    max-height: 98%;
+
+}
+#Close-btn{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    
+}
